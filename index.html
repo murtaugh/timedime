@@ -1,0 +1,99 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>TimeDime</title>
+
+	<!-- concatenate and minify for production -->
+	<link rel="stylesheet" href="assets/css/reset.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+	<script src="assets/js/libs/prefixfree.min.js"></script>
+	<script src="assets/js/modernizr-2.6.2.dev.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1>
+			TimeDime
+			<small>Multi-project time tracking</small>
+		</h1>
+
+	</header>
+
+	<form class="data-holder" novalidate>
+
+		<fieldset>
+			<label><input data-projectobject="project1title" type="text" placeholder="project name"></label>
+			<div class="line-item">
+				<label class="inline hours"><input class="hours-input" type="text"
+					data-projectobject="project1hours1"></label><!--
+				--><label class="inline description"><input class="description-input" type="text"
+					data-projectobject="project1description1"></label>
+			</div>
+			<div class="line-item">
+				<label class="inline hours"><input class="hours-input" type="text"
+					data-projectobject="project1hours2"></label><!--
+				--><label class="inline description"><input class="description-input" type="text"
+					data-projectobject="project1description2"></label>
+			</div>
+			<div class="line-item">
+				<label class="inline hours"><input class="hours-input" type="text"
+					data-projectobject="project1hours3"></label><!--
+				--><label class="inline description"><input class="description-input" type="text"
+					data-projectobject="project1description3"></label>
+			</div>
+			<label>
+				<textarea data-projectobject="project1notes" class="project-field" data-autoresize placeholder="notes"></textarea>
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<label><input data-projectobject="project2title" type="text" placeholder="project name"></label>
+			<div class="line-item">
+				<label class="inline hours"><input class="hours-input" type="text"
+					data-projectobject="project2hours1"></label><!--
+				--><label class="inline description"><input class="description-input" type="text"
+					data-projectobject="project2description1"></label>
+			</div>
+			<div class="line-item">
+				<label class="inline hours"><input class="hours-input" type="text"
+					data-projectobject="project2hours2"></label><!--
+				--><label class="inline description"><input class="description-input" type="text"
+					data-projectobject="project2description2"></label>
+			</div>
+			<div class="line-item">
+				<label class="inline hours"><input class="hours-input" type="text"
+					data-projectobject="project2hours3"></label><!--
+				--><label class="inline description"><input class="description-input" type="text"
+					data-projectobject="project2description3"></label>
+			</div>
+			<label>
+				<textarea data-projectobject="project2notes" class="project-field" data-autoresize placeholder="notes"></textarea>
+			</label>
+		</fieldset>
+
+	</form>
+
+	<a href="#" data-deleteall>delete all data</a>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='_/js/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<script src="assets/js/libs/jquery-storage-api/jquery.storageapi.min.js"></script>
+<script src="assets/js/functions.js"></script>
+
+</body>
+</html>
